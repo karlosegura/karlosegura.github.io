@@ -145,50 +145,50 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+  
+ <!-- Menu Container -->
+<div class="w3-container" id="portfolio">
+<h3 class="w3-center">MY WORK</h3>
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REPOSITORIES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Projects</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Repositories</div>
+      </a>
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+     <h5><a href="https://github.com/MCG-Externado"> Using Python in Mathematics Education</a></h5>
+      <p class="w3-text-grey">A project of the Externado de Colombia University in which we explore all math topics using Jupyter notebooks.</p><br>
+      <h5><a href="https://github.com/Izainea/Curso-Python"> Python Course</a></h5>
+      <p class="w3-text-grey">Let's do a simple Python scan. The material available here guides us from the Anaconda installation to the elementary processing of some databases.</p><br>
+      
+      <h5>Cellular Automata in epidemiological models</h5>
+      <p class="w3-text-grey"> Simulations and modeling with cellular automata.</p><br>
+    
+          <h5>NLP in legal data</h5>
+      <p class="w3-text-grey"> We use various natural language processing techniques to create applications that advise citizens on their legal needs.</p><br>
+     
     </div>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5><a href="https://github.com/izainea"> GitHub Profile</a></h5>
+      <p class="w3-text-grey">All repositories.</p><br>
+    </div>  
 
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    
   </div>
 </div>
-
+ 
+ 
+ 
+ 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
