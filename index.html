@@ -87,10 +87,10 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ACERCA DE MI</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="w3-center"><em>Me encanta la programación y la tecnologia</em></p>
+  <p>Como desarrollador me he enfrentado a diferentes problemas de la vida real, diferentes tecnologias y ambientes, cada negocio es diferente y entiende una lógica particular
+     el trabajo en equipo es importante para lograr esas metas que parecen lejanas, en este momento administro con un grupo de compañeros el ambiente de desarrollo de una empresa y 
+	 adelantamos esfuerzos para tener un esquema de integración continua, haciendo pinitos en DevOps y contenerización con docker y algo de CloudBees</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>CARLOS SEGURA</b></p><br>
@@ -99,9 +99,9 @@ body, html {
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Conocimientos en las siguientes tecnologías JSE, J2EE, JME, JEE, (JSF, JSP, Servlets, EJB, JDBC, JMS, JAAS, JCA). XML, XSD, XLST, servicios web, AXIS, AXIS2, Struts, Hibernate, Ant, Richfaces. Conocimientos y experiencia con bases de datos como Oracle, sybase, MySql, SqlServer, PostGreSQL.
+Servidores de aplicaciones, Oracle Application Server (OC4J), Glassfish, WAS, Tomcat y JBoss. Desarrollo con herramientas: Eclipse, RAD, WID, NetBeans, Aqua Data Studio, JDeveloper. Mimería de datos (Pentaho).
+Instalación, configuración y soporte ORACLE BRM. Conocimientos en los módulos de Billing, Invoicing y Payment de ORACLE Billing and Revenue Management</p>
     </div>
   </div>
   <p class="w3-large w3-center w3-padding-16">Mis habilidades:</p>
@@ -126,32 +126,43 @@ body, html {
   </div>
 </div>
 
+
 <!-- Menu Container -->
 <div class="w3-container" id="portfolio">
-<hr>
-<h2 class="w3-center">Accordions</h2>
-<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 1</button>
-<div id="Demo1" class="w3-hide">
-  <div class="w3-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-</div>
-<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 2</button>
-<div id="Demo2" class="w3-hide">
-  <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
-  <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
-  <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
-</div>
-<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 3</button>
-<div id="Demo3" class="w3-hide w3-black">
-  <div class="w3-container">
-    <p>Accordion with Images:</p>
-    <img src="img_snowtops.jpg" style="width:30%;" class="w3-animate-zoom">
-    <p>French Alps</p>
-  </div>
-</div>
+<h3 class="w3-center">MI TRABAJO</h3>
+  <div class="w3-content" style="max-width:700px">
+ 
 
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Proyectos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Repositorios</div>
+      </a>
+    </div>
 
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+     <h5><a href="https://github.com/MCG-Externado"> Using Python in Mathematics Education</a></h5>
+      <p class="w3-text-grey">A project of the Externado de Colombia University in which we explore all math topics using Jupyter notebooks.</p><br>
+      <h5><a href="https://github.com/Izainea/Curso-Python"> Python Course</a></h5>
+      <p class="w3-text-grey">Let's do a simple Python scan. The material available here guides us from the Anaconda installation to the elementary processing of some databases.</p><br>
+      
+      <h5>Cellular Automata in epidemiological models</h5>
+      <p class="w3-text-grey"> Simulations and modeling with cellular automata.</p><br>
+    
+          <h5>NLP in legal data</h5>
+      <p class="w3-text-grey"> We use various natural language processing techniques to create applications that advise citizens on their legal needs.</p><br>
+     
+    </div>
+
+    <div id="  " class="w3-container menu w3-padding-48 w3-card">
+      <h5><a href="https://github.com/izainea"> GitHub </a></h5>
+      <p class="w3-text-grey">Todos los Repositorios</p><br>
+    </div>  
+
+    
+  </div>
 </div>
  
  
